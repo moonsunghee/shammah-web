@@ -1,0 +1,17 @@
+.sd-header{
+    background-color: #000;
+    color: #fff;
+    header{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        .logo{}
+        .gnb{
+            display: flex;
+            h2{
+                margin: 0 20px;
+            }
+        }
+        .loginbox{}
+    }
+}

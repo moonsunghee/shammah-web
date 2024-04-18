@@ -1,0 +1,22 @@
+.sd-sitemap{
+    background-color: #666;
+    padding: 20px 0;
+    header{
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+        max-width: 1440px;
+        margin: 0 auto;
+        .nav-group{
+            width: calc(100% / 6 - 20px);
+            text-align: center;
+            line-height: 40px;
+            color: #fff;
+            h2{
+                font-family: 'Noto Sans KR';
+                font-size: 14px;
+                font-weight: 700;
+            }
+        }
+    }
+}
