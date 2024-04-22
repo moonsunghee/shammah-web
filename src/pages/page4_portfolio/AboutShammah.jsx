@@ -1,20 +1,38 @@
-import React from   'react';
+import React from 'react';
 const AboutShammah = () => {
-    return(
-        <div className='content aboutShammah'>
-            <header>
-                <h3>About <b>SHAMMAH</b></h3>
-                <p>
-                    성경에 태초 하나님께서 사람을 위해 천지를 창조하셨습니다.하나님이 세상을 만드실때 그 사랑하는 자녀를 위해 천지를 만드시는 순서를 계획 하시고 목적에 맞게 설계하셨 듯 디자인은 계획과 설계입니다.성경적 세계관에 비추어 세속적인 디자인이 아닌 하나님의 디자인으로 무너져 가는 세상의 디자인을 하나님의 디자인으로 다시 회복 시키기 위한 사명으로 삼마디자인은 설립되었습니다.
-삼마디자인은 이 땅 가운데 무너진 하나님의 성벽중 디자인영역이 천지창조 하실 때 하나님의 디자인으로 온전히 회복되는 사역이 중심이며
-                </p>
-            </header>
-            <section>
-                <div className="image">
-                    
-                </div>
-            </section>
-        </div>
-    )
+  return (
+    <div className='content aboutShammah'>
+      <div className='bg-area'></div>
+      <div className='content-box'>
+        <header>
+          <div className='hdr-box'>
+            <h3>About <b>SHAMMAH</b></h3>
+            {/* <p>
+                히브리어 '삼마(Shammah)'는 거하다, 존재하다라는 뜻을 가지고 있습니다. 
+                <br/>여호와 하나님은 상황이나 환경이 좋고 나쁨을 떠나 항상 필요한 곳에 함께 계신다는 의미입니다.
+                <br/>우리는 여호와 하나님께서 디자인 영역에 다스리고 거하신다는 믿음이 있습니다. 
+                <br/>삼마디자인은 태초 여호와 하나님의 디자인 원칙으로 무너진 성벽을 재건하고
+                <br/>디자인 영역에서 하나님의 원칙을 다시 세우는 사명을 가지고 디자인 복음을 전합니다.
+                <br/>귀 사업장과 가정에 예수님 이름으로 사랑과 축복이 함께 하길 기도 합니다.
+            </p> */}
+            <p>
+              안녕하세요. 삼마디자인입니다.
+              <br />삼마디자인은 신규 외주제작사로 웹/앱 분야에서 기획, 디자인, 개발, IT교육 및 인재양성에
+              <br />전문성을 가지고 있습니다.
+              <br />법률, 교육, 통신, 금융사에서 얻은 경험을 바탕으로 맡겨주신 프로젝트에
+              <br />최선을 다하여 만족할 수 있는 결과를 보여 드리겠습니다.
+
+
+            </p>
+          </div>
+        </header>
+        <section>
+          <div className="image">
+
+          </div>
+        </section>
+      </div>
+    </div>
+  )
 }
 export default AboutShammah

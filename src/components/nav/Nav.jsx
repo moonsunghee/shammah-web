@@ -2,7 +2,7 @@ import React from 'react';
 const Nav = () => {
     return(
         <div className='sd-nav'>
-            <header>
+            <nav>
                 <ul>
                     <li>설립목적</li>
                     <li>제작방식</li>
@@ -34,7 +34,7 @@ const Nav = () => {
                     <li>프리랜서등록</li>
                     <li>견적문의</li>
                 </ul>
-            </header>
+            </nav>
         </div>
     )
 }

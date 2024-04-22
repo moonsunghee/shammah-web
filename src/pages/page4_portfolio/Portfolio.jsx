@@ -7,11 +7,13 @@ import AboutShammah from './AboutShammah';
 import '../../styles/portfolio.scss'
 import MajorPortfolio from './MajorPortfolio';
 import ShammahPortfolio from './ShammahPortfolio';
+import PracticeMap from '../test/PracticeMap';
 const Portfolio = () => {
     return(
         <>
             <Header/>
             {/* <Nav/> */}
+            
             <AboutShammah/>
             <MajorPortfolio/>
             <ShammahPortfolio/>

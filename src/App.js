@@ -6,6 +6,7 @@ import './styles/common.scss'
 import Main from './pages/page0_main/Main';
 import Portfolio from './pages/page4_portfolio/Portfolio';
 
+
 const PageMain = lazy(() => import('./pages/page0_main/Main'));
 function App() {
   return (
