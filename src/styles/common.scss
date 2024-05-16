@@ -1,16 +1,16 @@
 @import 'fonts.scss';
 @import 'reset.scss';
-@import '../components/header/header.scss';
-@import '../components/nav/nav.scss';
-@import '../components/sitemap/sitemap.scss';
-@import '../components/footer/footer.scss';
+@import 'header.scss';
+@import 'nav.scss';
+@import 'sitemap.scss';
+@import 'footer.scss';
 
 body {
   font-family: 'Noto Sans KR';
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-
+  overflow-x: hidden;
   h1,
   h2,
   h3 {

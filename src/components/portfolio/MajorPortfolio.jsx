@@ -1,29 +1,34 @@
 import React, { useState } from 'react';
 import Slider from "react-slick";
-import { Link } from 'react-router-dom';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from 'react-router-dom';
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
+import mjImg1 from 'assets/imgs/portfolio/major-pf01.jpg'
+import mjImg2 from 'assets/imgs/portfolio/major-pf02.jpg'
+import mjImg3 from 'assets/imgs/portfolio/major-pf03.jpg'
+import mjImg4 from 'assets/imgs/portfolio/major-pf04.jpg'
+
 const MajorPortfolio = () => {
   const [pfImgList, setPfImgList] = useState([
     {
       key: 'pf1',
-      path: '/imgs/portfolio/major-pf01.jpg',
+      path: mjImg1,
       text: '첫 번째 이미지',
     },
     {
       key: 'pf2',
-      path: '/imgs/portfolio/major-pf02.jpg',
+      path: mjImg2,
       text: '두 번째 이미지',
     },
     {
       key: 'pf3',
-      path: '/imgs/portfolio/major-pf03.jpg',
+      path: mjImg3,
       text: '세 번째 이미지',
     },
     {
       key: 'pf4',
-      path: '/imgs/portfolio/major-pf04.jpg',
+      path: mjImg4,
       text: '네 번째 이미지',
     },
   ])

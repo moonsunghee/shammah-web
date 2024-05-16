@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6f3a00db.css",
+    "main.js": "/static/js/main.9fc1f409.js",
+    "static/js/453.573b9b50.chunk.js": "/static/js/453.573b9b50.chunk.js",
+    "static/media/europa-light-webfont.svg": "/static/media/europa-light-webfont.7fb9e5b7189b1c1bf851.svg",
+    "static/media/europa-regular-webfont.svg": "/static/media/europa-regular-webfont.068612d077b28f80f6a3.svg",
+    "static/media/europa-bold-webfont.svg": "/static/media/europa-bold-webfont.800a1d2fad46e8528851.svg",
+    "static/media/europa-light-webfont.ttf": "/static/media/europa-light-webfont.d66543a9ebdebb6dfcea.ttf",
+    "static/media/europa-regular-webfont.ttf": "/static/media/europa-regular-webfont.3c5c6a61acb2811888cc.ttf",
+    "static/media/europa-bold-webfont.ttf": "/static/media/europa-bold-webfont.0de400f289d243d52af9.ttf",
+    "static/media/europa-bold-webfont.woff": "/static/media/europa-bold-webfont.49fb2639d307bdb42d4b.woff",
+    "static/media/europa-light-webfont.woff": "/static/media/europa-light-webfont.c1fa658f5ae648e3f45c.woff",
+    "static/media/europa-regular-webfont.woff": "/static/media/europa-regular-webfont.43601cb203f6fa9cd88f.woff",
+    "static/media/europa-light-webfont.eot": "/static/media/europa-light-webfont.a8fe574acfcce3e438ea.eot",
+    "static/media/europa-bold-webfont.eot": "/static/media/europa-bold-webfont.ce054f1bf35b01bc4aef.eot",
+    "static/media/europa-regular-webfont.eot": "/static/media/europa-regular-webfont.d2590283d8b9676fbeee.eot",
+    "static/media/europa-light-webfont.woff2": "/static/media/europa-light-webfont.5546267e41038d0bdfa8.woff2",
+    "static/media/europa-bold-webfont.woff2": "/static/media/europa-bold-webfont.754eda42cf043ce42979.woff2",
+    "static/media/europa-regular-webfont.woff2": "/static/media/europa-regular-webfont.2f4109b9f59416e7e59b.woff2",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.6f3a00db.css.map": "/static/css/main.6f3a00db.css.map",
+    "main.9fc1f409.js.map": "/static/js/main.9fc1f409.js.map",
+    "453.573b9b50.chunk.js.map": "/static/js/453.573b9b50.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6f3a00db.css",
+    "static/js/main.9fc1f409.js"
+  ]
+}

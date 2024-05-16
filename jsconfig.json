@@ -1,0 +1,10 @@
+{
+  "extends": "./jsconfig.paths.json",
+  "compilerOptions": {
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@utils/*": ["src/utils/*"]
+    },
+    "baseUrl": "src"}, 
+  "include": ["src"]
+}
