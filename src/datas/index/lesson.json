@@ -1,0 +1,87 @@
+[
+  {
+    "class": "design",
+    "menu" : "디자인 방법론",
+    "article": [
+      { "lable" : "디자인 방법론", "list": []}
+    ],
+    "list": "",
+    "key": ""
+  },
+  {
+    "class": "uxui",
+    "menu" : "UXUI레슨 / 코칭",
+    "article": [
+      { "lable": "Figma 기초", "list": [
+        {"txt":"피그마기초와 스타일의 이해", "hour":"1"},
+        {"txt":"그리드 시스템과 레이아웃", "hour":"1"},
+        {"txt":"컴포넌트 이해와 활용", "hour":"1"},
+        {"txt":"배리언트 이해와 활용", "hour":"1"},
+        {"txt":"프레임 바이 인터렉션", "hour":"1"},
+        {"txt":"배리언트스위치 인터렉션", "hour":"1"},
+        {"txt":"캐러셀 인터렉션", "hour":"1"},
+        {"txt":"오버플로우 인터렉션", "hour":"1"},
+        {"txt":"모달윈도우 인터렉션", "hour":"1"},
+        {"txt":"내비게이션 인터렉션", "hour":"1"}
+      ]},
+      { "lable": "Figma 활용", "list": [
+        {"txt":"text", "hour":"1"},
+        {"txt":"text", "hour":"1"},
+        {"txt":"text", "hour":"1"},
+        {"txt":"text", "hour":"1"},
+        {"txt":"text", "hour":"2"},
+        {"txt":"text", "hour":"1"},
+        {"txt":"text", "hour":"1"},
+        {"txt":"text", "hour":"3"},
+        {"txt":"text", "hour":"1"},
+        {"txt":"text", "hour":"0.5"}
+      ]}
+    ],
+    "key": ""
+  },
+  {
+    "class": "html",
+    "menu" : "HTML / CSS",
+    "article": [
+      { "lable": "웹퍼블리싱 초급", "list": [] },
+      { "lable": "웹퍼블리싱 활용", "list": [] }
+    ],
+    "key": ""
+  },
+  {
+    "class": "jquery",
+    "menu" : "Java Script / jQuery",
+    "article": [
+      { "lable": "JavaScript/jQuery 기초", "list": [] },
+      { "lable": "jQuery 활용 (예제 코딩)", "list": [] }
+    ],
+    "key": ""
+  },
+  {
+    "class": "react",
+    "menu" : "ECMA Script / React",
+    "article": [
+      { "lable": "ECMA Script/React 기초", "list": [] },
+      { "lable": "React 활용 (프론트엔드개발)", "list": [] }
+    ],
+    "key": ""
+  },
+  {
+    "class": "python",
+    "menu" : "PYTHON(파이썬)",
+    "article": [
+      { "lable": "파이썬기초", "list": [] },
+      { "lable": "파이썬 활용 (Big Data 조사 / 분석)", "list": [] }
+    ],
+    "key": ""
+  },
+  {
+    "class": "coach",
+    "menu" : "업무 코칭 / 보조",
+    "article": [
+      { "lable": "업무 코칭", "list": [] },
+      { "lable": "업무 지원 (대신 작업해 드림)", "list": [] }
+    ],
+    "key": ""
+  }
+]

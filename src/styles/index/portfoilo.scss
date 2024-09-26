@@ -1,0 +1,62 @@
+@import '../_mixin';
+.portfolio {
+  section {
+    margin-top: 0;
+    position: relative;
+
+    .img-wrap {
+      overflow: hidden;
+      .img-group {
+        width: calc(100% * 8);
+        @include flex(space-around);
+        position: relative;
+        z-index: 10;
+        article {
+          width: calc(100% / 8 - 20px);
+          height: 560px;
+          border-radius: 10px;
+          padding: 60px;
+          ul{
+            margin-top: 20px;
+            b{font-weight: 500;}
+            i{margin-left: 10px;}
+          }
+          p{
+            margin-top: 20px;
+            width: 40%;
+          }
+        }
+      }
+    }
+
+    .btn-wrap {
+      width: calc(100% + 120px);
+      height: 100%;
+      @include flex(space-between);
+      position: absolute;
+      top: 0;
+      left: -60px;
+
+      button {
+        width: 60px;
+        height: 100%;
+      }
+    }
+  }
+
+  header {
+    position: relative;
+    z-index: 20;
+    h3 {
+      width: 800px;
+      margin-left: auto;
+      margin-right: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+      line-height: 120px !important;
+      text-align: right;
+      padding-right: 20px;
+      margin-top: -60px;
+    }
+  }
+}

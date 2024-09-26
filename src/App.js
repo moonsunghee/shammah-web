@@ -1,28 +1,16 @@
-import logo from './logo.svg';
-import React, { Suspense, useEffect, lazy } from 'react'
-import {Routes, Route } from 'react-router-dom';
-import './styles/common.scss'
-//import './App.css';
-import Header from 'components/Header';
-import Nav from 'components/Nav';
-import Sitemap from 'components/Sitemap';
-import Footer from 'components/Footer';
-
-import Main from 'pages/Main';
-import Portfolio from 'pages/Portfolio';
-
-
-const App = () => {
+import { Routes, Route } from 'react-router-dom';
+import './styles/common.scss';
+import './styles/_color.scss';
+import Index from './pages/Index'
+import Sub1 from './pages/Sub1';
+import Sub2 from './pages/Sub2';
+function App() {
   return (
-    <>
-      <Header/>
-      {/* <Nav/> */}
-      <Routes>
-        <Route path='/' element={<Portfolio/>} />
-      </Routes>
-      <Sitemap/>
-      <Footer/>
-    </>
+    <Routes>
+      <Route path="/"     element={<Index />} />
+      <Route path="/Sub1" element={<Sub1 />} />
+      <Route path="/Sub2" element={<Sub2 />} />
+    </Routes>
   );
 }
 

@@ -1,0 +1,82 @@
+@import '../_mixin';
+.mn-wrap {
+  main {
+    @include width;
+    @include flex(space-around);
+    align-items: center;
+    position: relative;
+    padding-top: 120px;
+
+    &::before {
+      @include before;
+      height: calc(100% - 80px);
+      background-color: #000;
+      left: 0;
+      top: 0;
+    }
+
+    .img-wrap {
+      width: calc(50% - 20px);
+      margin-left: -33.33%;
+      overflow: hidden;
+
+      .img-group {
+        width: 400%;
+        @include flex(flex-start);
+        position: relative;
+        .image {
+          width: calc(100% / 4);
+          height: 400px;
+          background-color: #fff;
+        }
+      }
+
+      .btn-group {
+        @include flex(center);
+        position: relative;
+        z-index: 10;
+        margin-top: 10px;
+
+        button {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+
+    .texts {
+      position: relative;
+      width: calc(100% / 12 * 10 - 20px);
+      padding-top: 80px;
+      height: 600px;
+
+      &::before {
+        @include before;
+        background-color: #ccc;
+        right: 0;
+        top: 0;
+      }
+
+      h3 {
+        font-size: 64px;
+        line-height: 80px;
+      }
+      h4{
+        font-size: 18px;
+        line-height: 40px;
+      }
+      ul{
+        margin-top: 20px;
+        li{
+          margin-top: 10px;
+          &:first-of-type{
+            margin-top: 0;
+          }
+        }
+      }
+      p {
+        width: 60%;
+      }
+    }
+  }
+}

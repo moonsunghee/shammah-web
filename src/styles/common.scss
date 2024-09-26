@@ -1,76 +1,115 @@
-@import 'fonts.scss';
-@import 'reset.scss';
-@import 'header.scss';
-@import 'nav.scss';
-@import 'sitemap.scss';
-@import 'footer.scss';
+@import '_mixin';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Serif+KR:wght@200..900&display=swap');
+@import url('fonts.css');
+@import url('all.css');
+@import url('reset.css');
 
-body {
-  font-family: 'Noto Sans KR';
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
+body{
   overflow-x: hidden;
-  h1,
-  h2,
-  h3 {
-    font-family: 'Europa';
+  position: relative;
+  z-index: -9999;
+  background-color: #efefef;
+  @include fonts(14px, 300, 20px);
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #000;
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: "Europa", "Noto Sans KR";
+  font-weight: 700;
+  b{
+    font:inherit;
+  }
+  i{
+    font:inherit;
     font-weight: 300;
-
-    b {
-      font-weight: 700;
+  }
+}
+.image{
+  @include img;
+}
+.content{
+  padding: 120px 0;
+  header{
+    @include width;
+    text-align: center;
+    padding: 0 10px;
+    h3{
+      @include fonts(64px, 700, 80px);     
+    }
+    p{
+      white-space: pre-line;
     }
   }
-
-  header {
-    p {}
+  section{
+    @include width;
+    margin-top: 40px;
+    h4{
+      @include fonts(24px, 700, 40px);
+    }
+    h6{
+      @include fonts(12px, 500, 40px);
+    }
   }
-
-  section,
-  footer {
-    p {
-      font-family: 'Noto Serif KR';
+  footer{
+    @include width;
+    padding: 20px 0;
+    border-top: 1px solid #444;
+    margin-top: 40px;
+    p{
+      text-align: center;
+      color: #ccc;
+      white-space: pre-line;
     }
   }
 }
 
-.content {
-  padding: 80px 0;
 
-  header {
-    width: 95%;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 10px;
 
-    h3 {
-      font-size: 64px;
-      line-height: 80px;
-    }
-
-    p {
-      padding: 10px 5px;
-      color: #666;
-    }
+.banner{
+  background-color: rgba(0,0,0,0.5);
+  padding: 120px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2{
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 700;
   }
-
-  section {
-    width: 95%;
-    max-width: 1440px;
-    margin: 0 auto;
+  button{
+    font-size: 20px;
+    height: 40px;
+    padding: 0 40px;
+    background-color: transparent;
     margin-top: 40px;
   }
+}
 
-  footer {
-    width: 95%;
-    max-width: 1420px;
-    margin: 0 auto;
-    margin-top: 40px;
-    border-top: 1px solid #000;
-    padding: 20px 0;
-
-    p {
+.siteMap{
+  padding: 40px 0;
+  background-color: #ccc;
+  nav{
+    @include width;
+    @include flex(flex-start);
+    ul{
+      width: calc(20%);
       text-align: center;
+      li{
+        &:first-of-type{
+          font-weight: 700;
+        }
+        line-height: 40px;
+        font-weight: 400;
+        color: #999;
+      }
     }
   }
 }

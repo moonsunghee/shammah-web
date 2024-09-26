@@ -1,71 +1,52 @@
-import React from 'react';
-const Sitemap = () => {
+import React, {Component} from "react";
+const siteData = [
+  {
+    lable: '회사소개',
+    list : ['설립목적', 'CIP소개', '사업방향'],
+    key : ''
+  },
+  {
+    lable: '제작안내',
+    list : ['앱제작', '웹제작', '유인물제작', '홍보물제작'],
+    key : ''
+  },
+  {
+    lable: '디자이너',
+    list : ['정규디자이너', '프리랜서', '디자이너레슨', '개발과정레슨'],
+    key : ''
+  },
+  {
+    lable: '포트폴리오',
+    list : ['대표포트폴리오', '디자인/개발 견적', '레슨과정안내'],
+    key : ''
+  },
+  {
+    lable: '삼마디자인D9',
+    list : [],
+    key : ''
+  },
+];
+class SiteMap extends Component{
+  render(){
     return(
-        <div className='sd-sitemap'>
-            <header>
-                <ul className='nav-group'>
-                    <li>
-                        <h2>삼마디자인</h2>
-                        <ul>
-                            <li>설립목적</li>
-                            <li>제작방식</li>
-                            <li>디자이너</li>
-                            <li>포트폴리오</li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul className='nav-group'>
-                    <li>
-                        <h2>회사소개</h2>
-                        <ul>
-                            <li>설립목적</li>
-                            <li>CIP안내</li>
-                            <li>사업방향</li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul className='nav-group'>
-                    <li>
-                        <h2>제작안내</h2>
-                        <ul>
-                            <li>제작안내</li>
-                            <li>웹/앱제작</li>
-                            <li>유인물제작</li>
-                            <li>홍보물제작</li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul className='nav-group'>
-                    <li>
-                        <h2>디자이너</h2>
-                        <ul>
-                            <li>삼마디자인</li>
-                            <li>삼마프리랜서</li>
-                            <li>디자이너/개발자육성</li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul className='nav-group'>
-                    <li>
-                        <h2>포트폴리오</h2>
-                        <ul>
-                            <li>대표포트폴리오</li>
-                            <li>삼마포트폴리오</li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul className='nav-group'>
-                    <li>
-                        <h2>고객지원</h2>
-                        <ul>
-                            <li>시안제작</li>
-                            <li>프리랜서등록</li>
-                            <li>견적문의</li>
-                        </ul>
-                    </li>
-                </ul>
-            </header>
-        </div>
-    )
+      <div className="siteMap">
+        <nav>
+          {siteData.map((data)=>{
+            return(
+              <ul>
+                <li>{data.lable}</li>
+                {data.list.map((item)=>{
+                  return(
+                    <li>{item}</li>
+                  );
+                })}
+                
+              </ul>
+            );
+          })}
+        </nav>
+      </div>
+    );
+  }
 }
-export default Sitemap
+export default SiteMap;

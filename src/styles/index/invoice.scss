@@ -1,0 +1,124 @@
+@import '../_mixin';
+.invoice {
+  section {
+    position: relative;
+    .key-wrap {
+      @include flex(flex-start);
+      padding: 0 10px;
+
+      button {
+        line-height: 30px;
+        padding: 0 20px;
+        border-radius: 100px;
+        background-color: #ccc;
+        margin-right: 10px;
+        font-weight: 700;
+        &.active {
+          color: #fff;
+          &:nth-of-type(1){background-color: #da0;}
+          &:nth-of-type(2){background-color: #f60;}
+          &:nth-of-type(3){background-color: #f30;}
+          &:nth-of-type(4){background-color: #f09;}
+          &:nth-of-type(5){background-color: #a0a;}
+          &:nth-of-type(6){background-color: #60f;}
+        }
+      }
+    }
+    $iv_art_count : 14;
+    .art-wrap {
+      margin-top: 10px;
+      overflow: hidden;
+      .art-group {
+        width: calc(100% / 3 * $iv_art_count);
+        @include flex(space-around);
+        position: relative;
+        article {
+          width: calc(100% / $iv_art_count);
+          position: relative;
+          padding: 0 10px;
+          .image{
+            border-radius: 10px;
+            height: 520px;
+          }
+          .texts{
+            position: absolute;
+            left: 0; top: 0;
+            padding: 20px 40px;
+            h6{
+              span{
+                background-color: #000;
+                color: #fff;
+                padding: 5px 16px;
+                font-size: 14px;
+                font-weight: 100;
+                border-radius: 50px;
+              }
+            }
+            h4{
+              margin-top: 180px;
+            }
+            ul{
+              margin-top: 20px;
+              li{
+                @include flex(space-between);
+                @include fonts(16px, 400, 30px);
+              }
+            }
+          }
+          &:nth-of-type(1), 
+          &:nth-of-type(2), 
+          &:nth-of-type(3){
+            h6 span{
+              background-color: #da0;
+            }
+          }
+          &:nth-of-type(4),
+          &:nth-of-type(5),
+          &:nth-of-type(6){
+            h6 span{
+              background-color: #f60;
+            }
+          }
+          &:nth-of-type(7),
+          &:nth-of-type(8){
+            h6 span{
+              background-color: #f30;
+            }
+          }
+          &:nth-of-type(9),
+          &:nth-of-type(10){
+            h6 span{
+              background-color: #f09;
+            }
+          }
+          &:nth-of-type(11),
+          &:nth-of-type(12){
+            h6 span{
+              background-color: #a0a;
+            }
+          }
+          &:nth-of-type(13),
+          &:nth-of-type(14){
+            h6 span{
+              background-color: #60f;
+            }
+          }
+        }
+      }
+    }
+
+    .btn-wrap {
+      width: calc(100% + 120px);
+      height: calc(100% - 40px);
+      @include flex(space-between);
+      position: absolute;
+      bottom: 0;
+      left: -60px;
+
+      button {
+        width: 60px;
+        height: 100%;
+      }
+    }
+  }
+}
