@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import Headr from "../Header";
 import Footer from "../Footer";
-import "../../styles/index/portfoilo.scss";
+import "../../styles/sub3/portfoilo.scss";
 import $ from "jquery";
-import portfolio from "../../datas/index/portfolio.json";
+import portfolio from "../../datas/sub3/portfolio.json";
 const portfoiloList = portfolio;
 class Portfolio extends Component {
   componentDidMount() {

@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import "../../styles/index/main.scss";
+import "../../styles/sub3/main.scss";
 import $ from "jquery";
 class Main extends Component {
   componentDidMount(){

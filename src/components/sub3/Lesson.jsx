@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Header from "../Header";
 import Footer from "../Footer";
-import lesson from "../../datas/index/lesson.json";
-import "../../styles/index/lesson.scss";
+import lesson from "../../datas/sub3/lesson.json";
+import "../../styles/sub3/lesson.scss";
 import $ from "jquery";
 const lessonData = lesson;
 class Lesson extends Component {

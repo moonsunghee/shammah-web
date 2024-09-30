@@ -4,7 +4,7 @@ import './styles/_color.scss';
 import SiteHeader from './components/SiteHeader';
 import SiteMap from './components/SiteMap';
 import SiteFooter from './components/SiteFooter';
-import Index  from './pages/Index'
+import Sub3Portfolio  from './pages/Sub3Portfolio'
 import Sub1   from './pages/Sub1';
 import Sub2   from './pages/Sub2';
 function App() {
@@ -12,9 +12,9 @@ function App() {
     <>
       <SiteHeader/>
       <Routes>
-        <Route path="/"     element={<Index />} />
         <Route path="/Sub1" element={<Sub1 />} />
         <Route path="/Sub2" element={<Sub2 />} />
+        <Route path="/"     element={<Sub3Portfolio />} />
       </Routes>
       <SiteMap/>
       <SiteFooter/>

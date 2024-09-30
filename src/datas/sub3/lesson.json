@@ -1,9 +1,10 @@
 [
   {
     "class": "design",
-    "menu" : "디자인 방법론",
+    "menu" : "그래픽디자인",
     "article": [
-      { "lable" : "디자인 방법론", "list": []}
+      { "lable" : "포토샵", "list": []},
+      {"lable" : "일러스트레이터", "list": []}
     ],
     "list": "",
     "key": ""

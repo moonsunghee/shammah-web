@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import Header from "../Header";
 import Footer from "../Footer";
-import "../../styles/index/invoice.scss";
-import invoice from "../../datas/index/invoice.json";
-import categorys from "../../datas/index/invoice-categorys.json";
+import "../../styles/sub3/invoice.scss";
+import invoice from "../../datas/sub3/invoice.json";
+import categorys from "../../datas/sub3/invoice-categorys.json";
 import $ from "jquery";
 class Invoice extends Component {
   componentDidMount() {
