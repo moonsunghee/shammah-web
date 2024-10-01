@@ -3,7 +3,6 @@ import Header from "../Header";
 import Footer from "../Footer";
 import "../../styles/sub3/invoice.scss";
 import invoice from "../../datas/sub3/invoice.json";
-import categorys from "../../datas/sub3/invoice-categorys.json";
 import $ from "jquery";
 class Invoice extends Component {
   componentDidMount() {
@@ -18,7 +17,7 @@ class Invoice extends Component {
       current_pos = 0,
       art_width = parseInt(iv_artGroup.find("article").css("width")),
       artGroup_width = parseInt(iv_artGroup.css("width")),
-      moveX = 0;
+      move_X = 0;
     iv_keyword.on("click", function () {
       let keyIndex = $(this).index();
       console.log(keyIndex);
@@ -26,8 +25,8 @@ class Invoice extends Component {
       switch (keyIndex) {
         case 0:
           {
-            moveX = art_width * 0;
-            iv_artGroup.stop().animate({ left: moveX }, 300, () => {
+            move_X = art_width * 0;
+            iv_artGroup.stop().animate({ left: move_X }, 300, () => {
               artGroup_width = parseInt(iv_artGroup.css("width"));
               current_pos = parseInt(iv_artGroup.css("left"));
             });
@@ -35,8 +34,8 @@ class Invoice extends Component {
           break;
         case 1:
           {
-            moveX = art_width * -3;
-            iv_artGroup.stop().animate({ left: moveX }, 300, () => {
+            move_X = art_width * -3;
+            iv_artGroup.stop().animate({ left: move_X }, 300, () => {
               artGroup_width = parseInt(iv_artGroup.css("width"));
               current_pos = parseInt(iv_artGroup.css("left"));
             });
@@ -44,8 +43,8 @@ class Invoice extends Component {
           break;
         case 2:
           {
-            moveX = art_width * -6;
-            iv_artGroup.stop().animate({ left: moveX }, 300, () => {
+            move_X = art_width * -6;
+            iv_artGroup.stop().animate({ left: move_X }, 300, () => {
               artGroup_width = parseInt(iv_artGroup.css("width"));
               current_pos = parseInt(iv_artGroup.css("left"));
             });
@@ -53,8 +52,8 @@ class Invoice extends Component {
           break;
         case 3:
           {
-            moveX = art_width * -8;
-            iv_artGroup.stop().animate({ left: moveX }, 300, () => {
+            move_X = art_width * -8;
+            iv_artGroup.stop().animate({ left: move_X }, 300, () => {
               artGroup_width = parseInt(iv_artGroup.css("width"));
               current_pos = parseInt(iv_artGroup.css("left"));
             });
@@ -62,8 +61,8 @@ class Invoice extends Component {
           break;
         case 4:
           {
-            moveX = art_width * -10;
-            iv_artGroup.stop().animate({ left: moveX }, 300, () => {
+            move_X = art_width * -10;
+            iv_artGroup.stop().animate({ left: move_X }, 300, () => {
               artGroup_width = parseInt(iv_artGroup.css("width"));
               current_pos = parseInt(iv_artGroup.css("left"));
             });
@@ -71,8 +70,8 @@ class Invoice extends Component {
           break;
         case 5:
           {
-            moveX = art_width * -11;
-            iv_artGroup.stop().animate({ left: moveX }, 300, () => {
+            move_X = art_width * -11;
+            iv_artGroup.stop().animate({ left: move_X }, 300, () => {
               artGroup_width = parseInt(iv_artGroup.css("width"));
               current_pos = parseInt(iv_artGroup.css("left"));
             });
@@ -84,8 +83,8 @@ class Invoice extends Component {
       current_pos = parseInt(iv_artGroup.css("left"));
       art_width = parseInt(iv_artGroup.find("article").css("width"));
       if (current_pos < 0) {
-        moveX = current_pos + art_width;
-        iv_artGroup.stop().animate({ left: moveX }, 200, () => {
+        move_X = current_pos + art_width;
+        iv_artGroup.stop().animate({ left: move_X }, 200, () => {
           artGroup_width = parseInt(iv_artGroup.css("width"));
           current_pos = parseInt(iv_artGroup.css("left"));
           switch (current_pos) {
@@ -132,8 +131,8 @@ class Invoice extends Component {
       current_pos = parseInt(iv_artGroup.css("left"));
       art_width = parseInt(iv_artGroup.find("article").css("width"));
       if (current_pos != art_width * -11) {
-        moveX = current_pos - art_width;
-        iv_artGroup.stop().animate({ left: moveX }, 200, () => {
+        move_X = current_pos - art_width;
+        iv_artGroup.stop().animate({ left: move_X }, 200, () => {
           artGroup_width = parseInt(iv_artGroup.css("width"));
           current_pos = parseInt(iv_artGroup.css("left"));
           switch (current_pos) {
@@ -186,13 +185,13 @@ class Invoice extends Component {
         />
         <section>
           <div className="key-wrap">
-            {categorys.map((items) => {
+            {invoice.categorys.map((items) => {
               return <button>{items.button}</button>;
             })}
           </div>
           <div className="art-wrap">
             <div className="art-group">
-              {invoice.map((items, i) => {
+              {invoice.elements.map((items, i) => {
                 return (
                   <article>
                     <div className={"image i" + (i + 1)}></div>
